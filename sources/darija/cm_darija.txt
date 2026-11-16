@@ -1,0 +1,54 @@
+Phrase simple à verbe transitif direct : sujet + verbe + complément d'objet direct (COD). Le sujet peut être omis : le verbe porte la personne.
+Phrase nominale (averbale) : sans verbe conjugué ; formules, demandes, réponses. Politesse : يرحم والديك.
+Phrase attributive : pas de verbe « être » au présent en darija ; sujet + adjectif (ou راهو / راهي + adjectif).
+Phrase simple à verbe intransitif (sujet + verbe, sans complément d'objet).
+Phrase simple à verbe transitif indirect : complément introduit par une préposition (على، لـ، مع، في).
+Complément circonstanciel de temps postposé, en fin de phrase (نهار الاثنين = lundi).
+Phrase exclamative : واش من + nom (« quel… ! »).
+Phrase attributive nominale : sujet + هو / هي + groupe nominal attribut ; pas de verbe « être » au présent.
+Phrase négative : ما + verbe + ش (encadrement, comme « ne… pas »).
+Subordonnée relative sujet : اللّي (« qui », invariable).
+Phrase impérative (injonctive) : verbe à l'impératif, sujet non exprimé.
+Complément circonstanciel antéposé (de temps), en tête de phrase.
+Subordonnée complétive objet après un verbe d'opinion : ظنّ بلّي (« penser que ») ; pas de subjonctif en darija.
+Dislocation à gauche du sujet (thématisation) : le sujet est détaché puis repris par le pronom ; tour très courant à l'oral.
+Subordonnée relative objet : اللّي + verbe avec pronom de rappel (يديرها).
+Complément verbal : verbe conjugué + verbe conjugué, sans infinitif (يسيّي يدير = il essaie de faire).
+Phrase simple à double complémentation : COD + complément d'attribution introduit par لـ.
+Subordonnée circonstancielle de cause : خاطر / على خاطر (« parce que ») + verbe.
+Subordonnée complétive objet (verbe d'opinion) avec un COD dans la complétive ; بلّي = que.
+Subordonnée circonstancielle de temps : كي (« quand ») + verbe.
+Subordonnée circonstancielle d'hypothèse (conditionnelle réelle) : إذا + passé, puis présent.
+Coordination adversative : بصّح (« mais »).
+Phrase locative : راهو / راهي + complément de lieu (في، عند).
+Dislocation à gauche du COD avec reprise par un pronom suffixe (يديرها) ; thématisation du COD.
+Subordonnée relative locative : اللّي … فيها (« où » de lieu, avec pronom de rappel).
+Coordination copulative : و (« et »).
+Phrase clivée : … هو اللّي … (« c'est … qui ») ; mise en relief d'un constituant.
+Proposition temporelle à la place du participe absolu : كي + verbe (« une fois que »).
+Complétive après un verbe d'opinion avec attribut : ظنّ بلّي + sujet + adjectif.
+Complément verbal d'apprentissage : تعلّم + verbe conjugué, sans infinitif.
+Coordination de deux verbes avec sujet commun : le sujet n'est pas répété.
+Phrase présentative : راهو / كاين + sujet + verbe (« il y a … qui ») ; introduction d'un référent nouveau.
+Comparatif : كثر من / قلّ من (« plus que / moins que »).
+Subordonnée interrogative indirecte partielle : علاش، شكون، كيفاش، وين…
+Dislocation à droite (sujet rejeté en fin de phrase, après une virgule) ; tour de l'oral.
+Subordonnée interrogative indirecte totale : إذا (« si »).
+Interrogative partielle sur le sujet : شكون (« qui »).
+Irréel du présent : لوكان + verbe, puis verbe (ou كان + verbe) ; pas de conditionnel ni de subjonctif en darija.
+Subordonnée circonstancielle de cause connue : مادام (« puisque »).
+Juxtaposition par virgule (asyndète, parataxe).
+Relative prépositionnelle : اللّي + verbe + préposition avec pronom de rappel (يهدر عليها = dont il parle).
+Subordonnée circonstancielle de but : باش (« pour que ») + verbe, sans subjonctif.
+Subordonnée concessive : حتّى لوكان (« même si »).
+Enchâssement : complétive (بلّي) contenant une relative (subordination de deuxième degré).
+Coordination disjonctive : ولّا (« ou »).
+Subordonnée temporelle de postériorité immédiate : غير (« dès que ») + verbe.
+Circonstancielle de manière / d'absence : بلا ما + verbe (« sans faire »).
+Subordonnée temporelle d'antériorité : قبل ما + verbe (« avant que »).
+Subordonnée de concession : مع بلّي (« bien que ») + verbe, sans subjonctif.
+Circonstancielle de substitution : بلاصة ما + verbe (« au lieu de »).
+Subordonnée concessive extensive : وين ما (« où que ») + verbe.
+Concessive figée : على كلّ حال (« quoi qu'il en soit »).
+Juxtaposition par point-virgule (asyndète).
+Juxtaposition explicative par deux-points.

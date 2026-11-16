@@ -1,8 +1,8 @@
 """Construit data3d.json du palais darija à partir du palais italien (même structure, mêmes phrases FR)."""
-import json, re, sys, copy
+import json, re, sys, copy, os
 
-IT = "../hugo-morana/pm-italien/data3d.json"
-OUT = "site/data3d.json"
+IT = os.environ.get("PM_ITALIEN_DATA", "../../../pm-italien/data3d.json")   # data3d.json du dépôt pm-italien
+OUT = "../../data3d.json"
 
 def ipa(lt):
     s = lt.lower()
@@ -48,18 +48,29 @@ ENS = {"noms": ("الأسماء · l-asami", "souk algérien"), "verbes": ("ال
        "prepositions": ("حروف الجرّ · 7rouf j-jarr", "cour à arcades"), "adverbes": ("الظّروف · dh-dhrouf", "théâtre d'Alger"),
        "expressions": ("التّعابير · t-ta3abir", "café maure"), "incises": ("الكلمات العارضة · l-kelmat l-3arda", "patio"),
        "formes": ("التّصريف · t-tasrif", "atelier de la Casbah"), "patrons": ("القوالب · l-9walab", "bibliothèque")}
+SPECIAL = {"courantes": "التّعابير الشايعة · t-ta3abir ech-chay3a", "modales": "تعابير يحبّ ويقدر · ta3abir y7ebb w y9der",
+           "villes_pays": "المدن والبلدان · l-moudoun w l-bouldan"}
 FR_FIX = {(0, 48): "la voiture (soutenu)"}
+FRFIX = json.load(open("fr_fix.json", encoding="utf8")) if os.path.exists("fr_fix.json") else {}
+import glob as _glob
+for _f in sorted(_glob.glob("fixes/*.json")):   # transpositions Italie → Algérie
+    for _k, _v in json.load(open(_f, encoding="utf8")).items():
+        FRFIX.setdefault(_k, {}).update(_v)
+CM103 = [l.strip() for l in open("cm_darija.txt", encoding="utf8") if l.strip()]
 def check(ri, write=False):
     room_it = it["rooms"][ri]
-    main = load_main(f"rooms/r{ri:03d}_darija.txt")
-    px = load_px(f"rooms/r{ri:03d}_px.txt") if os.path.exists(f"rooms/r{ri:03d}_px.txt") else {}
+    main = load_main(f"salles/r{ri:03d}_darija.txt")
+    px = load_px(f"salles/r{ri:03d}_px.txt") if os.path.exists(f"salles/r{ri:03d}_px.txt") else {}
     want = [i for i, n in enumerate(room_it["niches"]) if n]
     errs = []
     if sorted(main) != want:
         errs.append(f"niches manquantes {sorted(set(want) - set(main))} / en trop {sorted(set(main) - set(want))}")
     room = {k: v for k, v in room_it.items() if k != "niches"}
     e = ENS.get(room_it["fam"], ("", ""))
-    room.update(it=e[0] + ("" if not room_it["id"][-1].isdigit() or "_" not in room_it["id"] else " " + room_it["id"].split("_")[-1]), decor=e[1])
+    rid = room_it["id"]; base = rid.rsplit("_", 1)[0] if rid[-1].isdigit() else rid
+    num = rid.rsplit("_", 1)[1] if rid[-1].isdigit() and "_" in rid else ""
+    lab = SPECIAL.get(base, e[0])
+    room.update(it=lab + (" " + num if num and num != "1" else ""), decor=e[1])
     niches = []
     for i, x in enumerate(room_it["niches"]):
         if not x or i not in main:
@@ -73,12 +84,26 @@ def check(ri, write=False):
                  eit=d["eit"], elt=d["elt"], eim=d["eim"])
         if d["eim"] not in d["eit"]: errs.append(f"{i}: segment surligné « {d['eim']} » absent de « {d['eit']} »")
         n.update(zi=None, zie=None, oi=None, co=None, ai=None, ap=None, am=None)
+        for k in ("itd", "ito", "itp", "ax"):   # champs propres à l'italien (tournures paramétriques, structures)
+            n.pop(k, None)
+        if d["frl"] and d["frl"] != x["fr"]:
+            n["af"] = None   # le son FR du libellé ne correspond plus
+        fx = FRFIX.get(f"{ri}:{i}")
+        if fx:
+            if "efr" in fx:
+                n.update(efr=fx["efr"], efm=fx["efm"], ae=None)
+        if ri == 103 and n.get("cm"):
+            n["cm"] = CM103[i]
         if x.get("px"):
             tr = px.get(i, [])
             if len(tr) != len(x["px"]): errs.append(f"{i}: {len(tr)} exemples supplémentaires au lieu de {len(x['px'])}")
             n["px"] = [[e[0], t[0], e[2], None, t[1]] for e, t in zip(x["px"], tr)]
         elif i in px:
             errs.append(f"{i}: exemples supplémentaires en trop")
+        for j, t in ((fx or {}).get("px") or {}).items():
+            j = int(j)
+            if n.get("px") and j < len(n["px"]):
+                n["px"][j][0] = t; n["px"][j][2] = None
         niches.append(n)
     room["niches"] = niches
     return room, errs
@@ -95,7 +120,7 @@ if __name__ == "__main__" and sys.argv[1] == "--check":
 
 rooms = []
 for ri in range(len(it["rooms"])):
-    if not os.path.exists(f"rooms/r{ri:03d}_darija.txt"): continue
+    if not os.path.exists(f"salles/r{ri:03d}_darija.txt"): continue
     room, errs = check(ri)
     if errs: print("salle", ri, "ignorée :", errs[:3]); continue
     rooms.append(room)
