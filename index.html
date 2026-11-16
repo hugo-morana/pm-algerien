@@ -3,7 +3,7 @@
 .big-it span[lang="ar"]{font-size:1.25em}
 .dz-lt{display:block;direction:ltr;font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.62em;letter-spacing:.02em;opacity:.8;margin-top:2px}
 .dz-elt{direction:ltr;font-size:13px;margin:2px 0 0;opacity:.85;font-family:var(--mono,'IBM Plex Mono',monospace)}
-</style><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-title" content="Palazzo"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#123a2c"></head><body>
+</style><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-title" content="Darja"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#123a2c"></head><body>
 <title>Dar ed-Darja</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -458,18 +458,18 @@ const COLS = ["#f4f1ea", "#c8302c", "#e57a1e", "#e6c21f", "#3f8f45", "#2f5fae", 
 const SURF = ["mur gauche", "diagonale gauche", "mur du fond", "diagonale droite", "mur droit", "sol droit", "sol centre", "sol gauche", "plafond gauche", "plafond droit"];
 const W = 12, D = 12, H = 6.2, CH = 3, GAP = 13, EYE = 1.6;
 const FAMS = {
-  noms:         { fr: "marché", it: "mercato", floor: ["terrazzo", "#b9603d", "#e3c7a6"], wall: "#e8d2b0", ceil: "#efe0c8", land: "etal" },
-  verbes:       { fr: "atelier", it: "bottega", floor: ["parquet", "#8a5a33", "#a8723f"], wall: "#d9c4a3", ceil: "#e6d6bc", land: "etabli" },
-  adjectifs:    { fr: "galerie de peinture", it: "pinacoteca", floor: ["marbre", "#e9e3d9", "#9b8f80"], wall: "#7e2f2a", ceil: "#efe6d6", land: "chevalet" },
-  pronoms:      { fr: "salon", it: "salotto", floor: ["tapis", "#6b2d3a", "#c9a24a"], wall: "#e3d7c0", ceil: "#f0e8d8", land: "fauteuil" },
-  conjonctions: { fr: "salle des ponts", it: "sala dei ponti", floor: ["damier", "#2e4e63", "#d6d0c2"], wall: "#cbd3cf", ceil: "#e4e6e0", land: "pont" },
-  prepositions: { fr: "cour à arcades", it: "cortile", floor: ["pierre", "#b3a58e", "#8d806b"], wall: "#d8b98d", ceil: "#7fa4c8", land: "colonne" },
-  adverbes:     { fr: "salle de théâtre", it: "teatro", floor: ["planches", "#5b3a26", "#714a30"], wall: "#7a1f24", ceil: "#2e1c18", land: "rideau" },
-  expressions:  { fr: "place du marché", it: "piazza", floor: ["pierre", "#a99f8f", "#7f7566"], wall: "#e0b77e", ceil: "#8fb3d6", land: "fontaine" },
-  incises:      { fr: "loggia des orateurs", it: "loggia", floor: ["terrazzo", "#c8b69a", "#7d6a4f"], wall: "#e9dcc4", ceil: "#d9c7a7", land: "lutrin" },
-  accords:      { fr: "salle des reflets", it: "sala dei riflessi", floor: ["marbre", "#e6dccb", "#8a7a64"], wall: "#5b4a6b", ceil: "#ece6dc", land: "chevalet" },
-  formes:       { fr: "salle des miroirs", it: "sala degli specchi", floor: ["marbre", "#d8d4cc", "#6f6a62"], wall: "#3f5a6b", ceil: "#e8e4dc", land: "etabli" },
-  patrons:      { fr: "cabinet de l'architecte", it: "studio dell'architetto", floor: ["damier", "#26394a", "#e3dccb"], wall: "#c9d4d8", ceil: "#eef0ec", land: "lutrin" }
+  noms:         { fr: "marché", it: "السّوق", floor: ["terrazzo", "#b9603d", "#e3c7a6"], wall: "#e8d2b0", ceil: "#efe0c8", land: "etal" },
+  verbes:       { fr: "atelier", it: "الحانوت تاع الصّنعة", floor: ["parquet", "#8a5a33", "#a8723f"], wall: "#d9c4a3", ceil: "#e6d6bc", land: "etabli" },
+  adjectifs:    { fr: "galerie de peinture", it: "الرّواق", floor: ["marbre", "#e9e3d9", "#9b8f80"], wall: "#7e2f2a", ceil: "#efe6d6", land: "chevalet" },
+  pronoms:      { fr: "salon", it: "الصالون", floor: ["tapis", "#6b2d3a", "#c9a24a"], wall: "#e3d7c0", ceil: "#f0e8d8", land: "fauteuil" },
+  conjonctions: { fr: "salle des ponts", it: "قاعة القناطر", floor: ["damier", "#2e4e63", "#d6d0c2"], wall: "#cbd3cf", ceil: "#e4e6e0", land: "pont" },
+  prepositions: { fr: "cour à arcades", it: "وسط الدار", floor: ["pierre", "#b3a58e", "#8d806b"], wall: "#d8b98d", ceil: "#7fa4c8", land: "colonne" },
+  adverbes:     { fr: "salle de théâtre", it: "المسرح", floor: ["planches", "#5b3a26", "#714a30"], wall: "#7a1f24", ceil: "#2e1c18", land: "rideau" },
+  expressions:  { fr: "place du marché", it: "الرّحبة", floor: ["pierre", "#a99f8f", "#7f7566"], wall: "#e0b77e", ceil: "#8fb3d6", land: "fontaine" },
+  incises:      { fr: "patio des orateurs", it: "السقيفة", floor: ["terrazzo", "#c8b69a", "#7d6a4f"], wall: "#e9dcc4", ceil: "#d9c7a7", land: "lutrin" },
+  accords:      { fr: "salle des reflets", it: "قاعة الضّيّ", floor: ["marbre", "#e6dccb", "#8a7a64"], wall: "#5b4a6b", ceil: "#ece6dc", land: "chevalet" },
+  formes:       { fr: "salle des miroirs", it: "قاعة المرايات", floor: ["marbre", "#d8d4cc", "#6f6a62"], wall: "#3f5a6b", ceil: "#e8e4dc", land: "etabli" },
+  patrons:      { fr: "cabinet de l'architecte", it: "بيرو المهندس", floor: ["damier", "#26394a", "#e3dccb"], wall: "#c9d4d8", ceil: "#eef0ec", land: "lutrin" }
 };
 const SHORT = { noms: "Noms", verbes: "Verbes", adjectifs: "Adj. qualif.", determinants: "Adj. déterm.", pronoms: "Pronoms", conjonctions: "Conjonctions",
   prepositions: "Prépositions", adverbes: "Adverbes", courantes_1: "Expr. courantes", noms_2: "Noms ²", verbes_2: "Verbes ²", adjectifs_2: "Adj. ²", adverbes_2: "Adverbes ²", incises_1: "Incises", incises_2: "Incises ²", incises_3: "Incises ³", incises_4: "Incises ⁴",
@@ -665,54 +665,54 @@ function landmark(kind) {
    toilettes, grenier, cave, garage, jardin, piscine, terrasse… Les 10 surfaces deviennent 10 objets typiques de la
    pièce (« il divano · le canapé »), modélisés à côté de leur panneau : on accroche chaque dizaine à un objet. */
 const HOMES = [   // dans l'ordre de la visite : on entre, on fait le tour de la zone de jour (côté sud), on sort au jardin, puis on revient par la zone de nuit (côté nord)
-  { k: "ingresso", fr: "Entrée", it: "L'ingresso", wall: "#d9c7a6", floor: ["damier", "#2b2b2b", "#e8e2d4"], ceil: "#f2ece0", land: "plante", o: [
-    ["l'appendiabiti · le portemanteau", "portemanteau", "T"], ["la console · la console", "console"], ["la porta d'ingresso · la porte d'entrée", "porte", "T"], ["la scarpiera · le meuble à chaussures", "scarpiera"], ["l'orologio a pendolo · l'horloge", "horloge", "T"],
-    ["lo zerbino · le paillasson", "paillasson"], ["il pacco · le colis", "cartons"], ["il portaombrelli · le porte-parapluie", "parapluies"], ["la plafoniera · le plafonnier", "plafonnier"], ["il rilevatore di fumo · le détecteur de fumée", "detecteur"]] },
-  { k: "soggiorno", fr: "Salon", it: "Il soggiorno", wall: "#c97b5a", floor: ["parquet", "#9a6b40", "#b5824f"], ceil: "#f3e9d8", land: "fauteuil", o: [
-    ["il divano · le canapé", "canape"], ["il camino · la cheminée", "cheminee"], ["la televisione · la télévision", "tv"], ["la pianta · la plante verte", "plante"], ["la libreria · la bibliothèque", "biblio", "T"],
-    ["il pouf · le pouf", "pouf"], ["il tavolino · la table basse", "tablebasse"], ["il tappeto · le tapis", "tapis"], ["il lampadario · le lustre", "lustre"], ["il ventilatore · le ventilateur", "ventilo"]] },
-  { k: "pranzo", fr: "Salle à manger", it: "La sala da pranzo", wall: "#7a8f6a", floor: ["parquet", "#6e4a2c", "#7f5634"], ceil: "#efe9dc", land: "horloge", o: [
-    ["la credenza · le buffet", "buffet"], ["la vetrina · le vaisselier", "vaisselier"], ["la finestra · la fenêtre", "fenetre", "T"], ["il vaso di fiori · le vase de fleurs", "vase"], ["il carrello · la desserte", "desserte"],
-    ["le sedie · les chaises", "chaises"], ["la tavola apparecchiata · la table mise", "table"], ["la panca · le banc", "banc"], ["la lampada a sospensione · la suspension", "suspension"], ["la ghirlanda · la guirlande", "guirlande"]] },
-  { k: "cucina", fr: "Cuisine", it: "La cucina", wall: "#f0dc78", floor: ["damier", "#b8463a", "#efe6d6"], ceil: "#fbf7ec", land: "fruits", o: [
-    ["il frigorifero · le réfrigérateur", "frigo", "T"], ["il microonde · le micro-ondes", "microonde"], ["il lavello · l'évier", "evier"], ["la pattumiera · la poubelle", "poubelle"], ["i fornelli · la cuisinière", "cuisiniere"],
-    ["la lavastoviglie · le lave-vaisselle", "lavevaisselle"], ["l'isola · l'îlot de cuisine", "ilot"], ["gli sgabelli · les tabourets", "tabourets"], ["la cappa · la hotte", "hotte"], ["le pentole appese · les casseroles suspendues", "casseroles"]] },
-  { k: "lavanderia", fr: "Buanderie", it: "La lavanderia", wall: "#a9d3df", floor: ["carreaux", "#d6dde0", "#9fb0b8"], ceil: "#eef4f6", land: "aspirateur", o: [
-    ["la lavatrice · le lave-linge", "lavelinge"], ["il detersivo · la lessive", "bidons"], ["l'asciugatrice · le sèche-linge", "sechelinge"], ["il cesto della biancheria · le panier à linge", "panier"], ["la caldaia · le chauffe-eau", "chaudiere", "T"],
-    ["il ferro da stiro · le fer à repasser", "fer"], ["la bacinella · la bassine", "bassine"], ["la scopa · le balai", "balai"], ["lo stendino · l'étendoir", "etendoir"], ["le mollette · les pinces à linge", "pinces"]] },
-  { k: "garage", fr: "Garage", it: "Il garage", wall: "#9a9a9a", floor: ["beton", "#8f8f8c", "#7a7a77"], ceil: "#cfcfcf", land: "velo", o: [
-    ["il pannello degli attrezzi · le panneau à outils", "outils"], ["la tanica · le bidon d'essence", "bidon"], ["la saracinesca · la porte de garage", "portegarage", "T"], ["la scala · l'escabeau", "escabeau"], ["la macchina · la voiture", "voiture", "T"],
-    ["la cassetta degli attrezzi · la caisse à outils", "caisse"], ["il banco da lavoro · l'établi", "etabli"], ["le gomme · les pneus", "pneus"], ["il neon · le néon", "neon"], ["la bici appesa · le vélo suspendu", "velosusp"]] },
-  { k: "cantina", fr: "Cave", it: "La cantina", wall: "#6b6460", floor: ["pierre", "#5e5751", "#4a4440"], ceil: "#3d3732", land: "tonneau", o: [
-    ["la rastrelliera · le casier à bouteilles", "vins", "T"], ["la botte · le tonneau", "tonneau"], ["la caldaia · la chaudière", "chaudiere", "T"], ["il secchio · le seau", "seau"], ["gli scaffali · les étagères", "etagere", "T"],
-    ["le casse d'acqua · les packs d'eau", "cartons"], ["la cassetta di mele · la cagette de pommes", "cagette"], ["la trappola per topi · la tapette à souris", "tapette"], ["il prosciutto appeso · le jambon suspendu", "jambon"], ["la lampadina · l'ampoule nue", "ampoule"]] },
-  { k: "terrazza", fr: "Terrasse", it: "La terrazza", out: true, wall: "#e7c9a0", floor: ["planches", "#a07850", "#8a6440"], ceil: "#f4c58a", land: "plante", o: [
-    ["il limone in vaso · le citronnier en pot", "citronnier"], ["l'amaca · le hamac", "hamac"], ["la ringhiera · la rambarde", "rambarde"], ["la lanterna · la lanterne", "lanterne"], ["il dondolo · la balancelle", "balancelle"],
-    ["i cuscini · les coussins", "coussins"], ["il tavolino · la petite table", "tablebasse"], ["l'annaffiatoio · l'arrosoir", "arrosoir"], ["la tenda da sole · le store banne", "store"], ["la luna · la lune", "lune"]] },
-  { k: "giardino", fr: "Jardin", it: "Il giardino", out: true, wall: "#4f7f3a", floor: ["gazon", "#5f9a3f", "#4d8434"], ceil: "#9cc8ec", land: "arrosoir", o: [
-    ["la siepe · la haie", "haie"], ["la cuccia · la niche du chien", "niche"], ["l'albero · l'arbre", "arbre", "T"], ["il nano da giardino · le nain de jardin", "nain"], ["il barbecue · le barbecue", "bbq"],
-    ["l'aiuola · le parterre de fleurs", "fleurs"], ["il tavolo da giardino · la table de jardin", "tablejardin"], ["la carriola · la brouette", "brouette"], ["il sole · le soleil", "soleil"], ["la nuvola · le nuage", "nuage"]] },
-  { k: "piscina", fr: "Piscine", it: "La piscina", out: true, wall: "#dfe9ee", floor: ["carreaux", "#e6eef0", "#bcd3da"], ceil: "#a8d8f4", land: "plante", o: [
-    ["la doccia esterna · la douche extérieure", "douche", "T"], ["l'asciugamano · la serviette", "serviette"], ["il trampolino · le plongeoir", "plongeoir"], ["il salvagente · la bouée", "bouee"], ["la sdraio · le transat", "transat"],
-    ["il materassino · le matelas gonflable", "matelas"], ["la vasca · le bassin", "bassin"], ["la scaletta · l'échelle de piscine", "echelle"], ["l'ombrellone · le parasol", "parasol"], ["il gabbiano · la mouette", "oiseau"]] },
-  { k: "soffitta", fr: "Grenier", it: "La soffitta", wall: "#9b7a55", floor: ["planches", "#7b5a3a", "#6a4c30"], ceil: "#5a4030", land: "velo", o: [
-    ["il baule · la malle", "malle"], ["le scatole · les cartons", "cartons"], ["l'abbaino · la lucarne", "fenetre", "T"], ["la sedia a dondolo · le rocking-chair", "fauteuil"], ["il manichino · le mannequin", "mannequin", "T"],
-    ["il grammofono · le gramophone", "gramo"], ["il tappeto arrotolato · le tapis roulé", "rouleau"], ["la bambola · la poupée", "poupee"], ["la trave · la poutre", "poutre"], ["la ragnatela · la toile d'araignée", "toile"]] },
-  { k: "cameretta", fr: "Chambre d'enfant", it: "La cameretta", wall: "#8fd0a8", floor: ["damier", "#f2c84b", "#5aa0d8"], ceil: "#cfe6ff", land: "trottinette", o: [
-    ["la cassapanca dei giochi · le coffre à jouets", "coffre"], ["l'orsacchiotto · l'ours en peluche", "ours"], ["la casa delle bambole · la maison de poupée", "maisonpoupee"], ["il cavallo a dondolo · le cheval à bascule", "cheval"], ["il letto a castello · les lits superposés", "litsup", "T"],
-    ["il pallone · le ballon", "ballon"], ["il tappeto puzzle · le tapis puzzle", "tapispuzzle"], ["il trenino · le petit train", "train"], ["la giostrina · le mobile", "mobile"], ["le stelle · les étoiles", "etoiles"]] },
-  { k: "bagno", fr: "Salle de bain", it: "Il bagno", wall: "#8fcbe0", floor: ["damier", "#ffffff", "#2f6f9a"], ceil: "#f7fbfc", land: "plante", o: [
-    ["la vasca da bagno · la baignoire", "baignoire"], ["il portasciugamani · le porte-serviettes", "radiateur"], ["il lavandino · le lavabo", "lavabo"], ["lo spazzolino · la brosse à dents", "verre"], ["la doccia · la douche", "douche", "T"],
-    ["la bilancia · la balance", "balance"], ["il tappetino · le tapis de bain", "tapisbain"], ["il cesto · le panier à linge", "panier"], ["il neon · le néon", "neon"], ["la tenda della doccia · le rideau de douche", "rideaudouche"]] },
-  { k: "camera", fr: "Chambre des parents", it: "La camera da letto", wall: "#b9a3c9", floor: ["moquette", "#cdb9a6", "#bca792"], ceil: "#f5f0f7", land: "valise", o: [
-    ["l'armadio · l'armoire", "armoire", "T"], ["il comodino · la table de chevet", "chevet"], ["la testiera · la tête de lit", "tetelit"], ["la toeletta · la coiffeuse", "coiffeuse"], ["il cassettone · la commode", "commode"],
-    ["le pantofole · les chaussons", "chaussons"], ["il letto matrimoniale · le lit double", "lit"], ["lo scendiletto · la descente de lit", "tapis"], ["il lampadario · le lustre", "lustre"], ["la zanzariera · la moustiquaire", "moustiquaire"]] },
-  { k: "studio", fr: "Bureau", it: "Lo studio", wall: "#3f6273", floor: ["parquet", "#4a3524", "#5a412c"], ceil: "#e8e4dc", land: "lampadaire", o: [
-    ["la scrivania · le bureau", "bureau"], ["la stampante · l'imprimante", "imprimante"], ["lo scaffale · l'étagère", "biblio", "T"], ["il mappamondo · le globe", "globe"], ["la cassettiera · le caisson", "caisson"],
-    ["la sedia girevole · le fauteuil de bureau", "fauteuilbureau"], ["il tappeto · le tapis", "tapis"], ["il cestino · la corbeille", "poubelle"], ["i faretti · les spots", "spots"], ["il condizionatore · le climatiseur", "clim"]] },
-  { k: "gabinetto", fr: "Toilettes", it: "Il gabinetto", wall: "#2e6b4f", floor: ["damier", "#1e1e1e", "#d0d0d0"], ceil: "#f0f0ea", land: "plante", o: [
-    ["il water · la cuvette", "wc"], ["la carta igienica · le papier toilette", "papier"], ["lo sciacquone · la chasse d'eau", "chasse"], ["lo scopino · la balayette", "balayette"], ["il lavamani · le lave-mains", "lavabo"],
-    ["le riviste · les magazines", "magazines"], ["il deodorante · le désodorisant", "spray"], ["il tappetino · le tapis", "tapisbain"], ["la lampadina · l'ampoule", "ampoule"], ["la finestrella · la lucarne", "lucarne"]] }
+  { k: "ingresso", fr: "Entrée", it: "المدخل", wall: "#d9c7a6", floor: ["damier", "#2b2b2b", "#e8e2d4"], ceil: "#f2ece0", land: "plante", o: [
+    ["المشجب · le portemanteau", "portemanteau", "T"], ["الكونسول · la console", "console"], ["باب الدار · la porte d'entrée", "porte", "T"], ["مخزن الصبابط · le meuble à chaussures", "scarpiera"], ["المڨانة · l'horloge", "horloge", "T"],
+    ["الحصيرة تاع الباب · le paillasson", "paillasson"], ["الكولي · le colis", "cartons"], ["بلاصة المظلّات · le porte-parapluie", "parapluies"], ["الضوّ تاع السقف · le plafonnier", "plafonnier"], ["الديتيكتور تاع الدخان · le détecteur de fumée", "detecteur"]] },
+  { k: "soggiorno", fr: "Salon", it: "الصالون", wall: "#c97b5a", floor: ["parquet", "#9a6b40", "#b5824f"], ceil: "#f3e9d8", land: "fauteuil", o: [
+    ["الصالون · le canapé", "canape"], ["الشميني · la cheminée", "cheminee"], ["التلفزيون · la télévision", "tv"], ["النبتة · la plante verte", "plante"], ["المكتبة · la bibliothèque", "biblio", "T"],
+    ["البوف · le pouf", "pouf"], ["الطابلة الصغيرة · la table basse", "tablebasse"], ["الزربية · le tapis", "tapis"], ["الثريّا · le lustre", "lustre"], ["الفونتيلاتور · le ventilateur", "ventilo"]] },
+  { k: "pranzo", fr: "Salle à manger", it: "بيت الماكلة", wall: "#7a8f6a", floor: ["parquet", "#6e4a2c", "#7f5634"], ceil: "#efe9dc", land: "horloge", o: [
+    ["البوفي · le buffet", "buffet"], ["الخزانة تاع الماعون · le vaisselier", "vaisselier"], ["الطاقة · la fenêtre", "fenetre", "T"], ["المزهرية بالنوّار · le vase de fleurs", "vase"], ["الكرّوسة تاع الماكلة · la desserte", "desserte"],
+    ["الكراسي · les chaises", "chaises"], ["الطابلة موجّدة · la table mise", "table"], ["البانكة · le banc", "banc"], ["الضوّ المعلّق · la suspension", "suspension"], ["الڨيرلاند · la guirlande", "guirlande"]] },
+  { k: "cucina", fr: "Cuisine", it: "الكوزينة", wall: "#f0dc78", floor: ["damier", "#b8463a", "#efe6d6"], ceil: "#fbf7ec", land: "fruits", o: [
+    ["الفريجيدار · le réfrigérateur", "frigo", "T"], ["الميكرو أوند · le micro-ondes", "microonde"], ["البيا · l'évier", "evier"], ["الپوبال · la poubelle", "poubelle"], ["الطيّابة · la cuisinière", "cuisiniere"],
+    ["غسّالة الماعون · le lave-vaisselle", "lavevaisselle"], ["الطابلة تاع الكوزينة · l'îlot de cuisine", "ilot"], ["البنيّكات · les tabourets", "tabourets"], ["الهوت · la hotte", "hotte"], ["الطناجر المعلّقين · les casseroles suspendues", "casseroles"]] },
+  { k: "lavanderia", fr: "Buanderie", it: "بيت الصابون", wall: "#a9d3df", floor: ["carreaux", "#d6dde0", "#9fb0b8"], ceil: "#eef4f6", land: "aspirateur", o: [
+    ["الماشينة تاع الصابون · le lave-linge", "lavelinge"], ["الصابون تاع الحوايج · la lessive", "bidons"], ["الماشينة تاع التنشاف · le sèche-linge", "sechelinge"], ["القفّة تاع الحوايج · le panier à linge", "panier"], ["الشوفو · le chauffe-eau", "chaudiere", "T"],
+    ["الفيرو · le fer à repasser", "fer"], ["الجفنة · la bassine", "bassine"], ["الشطّابة · le balai", "balai"], ["النشّارة · l'étendoir", "etendoir"], ["المشابك تاع الحوايج · les pinces à linge", "pinces"]] },
+  { k: "garage", fr: "Garage", it: "الڨاراج", wall: "#9a9a9a", floor: ["beton", "#8f8f8c", "#7a7a77"], ceil: "#cfcfcf", land: "velo", o: [
+    ["البلانكة تاع الدوزان · le panneau à outils", "outils"], ["البيدون تاع الليسانس · le bidon d'essence", "bidon"], ["باب الڨاراج · la porte de garage", "portegarage", "T"], ["السلّوم الصغير · l'escabeau", "escabeau"], ["الطوموبيل · la voiture", "voiture", "T"],
+    ["الصندوق تاع الدوزان · la caisse à outils", "caisse"], ["الطابلة تاع الخدمة · l'établi", "etabli"], ["البنوات · les pneus", "pneus"], ["النيون · le néon", "neon"], ["البيسكلات المعلّقة · le vélo suspendu", "velosusp"]] },
+  { k: "cantina", fr: "Cave", it: "الكاڤ", wall: "#6b6460", floor: ["pierre", "#5e5751", "#4a4440"], ceil: "#3d3732", land: "tonneau", o: [
+    ["الكازيي تاع القارورات · le casier à bouteilles", "vins", "T"], ["البرميل · le tonneau", "tonneau"], ["الشوديار · la chaudière", "chaudiere", "T"], ["السطل · le seau", "seau"], ["الرفوف · les étagères", "etagere", "T"],
+    ["الپاكيات تاع الما · les packs d'eau", "cartons"], ["الكاجو تاع التفّاح · la cagette de pommes", "cagette"], ["المصيدة تاع الفار · la tapette à souris", "tapette"], ["الكاشير المعلّق · le jambon suspendu", "jambon"], ["البولة العريانة · l'ampoule nue", "ampoule"]] },
+  { k: "terrazza", fr: "Terrasse", it: "السطح", out: true, wall: "#e7c9a0", floor: ["planches", "#a07850", "#8a6440"], ceil: "#f4c58a", land: "plante", o: [
+    ["شجرة القارص في الپو · le citronnier en pot", "citronnier"], ["الهاماك · le hamac", "hamac"], ["الدرابزين · la rambarde", "rambarde"], ["الفنار · la lanterne", "lanterne"], ["الكرسي اللي يتهزهز · la balancelle", "balancelle"],
+    ["المخدّات · les coussins", "coussins"], ["الطابلة الصغيرة تاع برّا · la petite table", "tablebasse"], ["المرشّة · l'arrosoir", "arrosoir"], ["الستور تاع الشمس · le store banne", "store"], ["القمر · la lune", "lune"]] },
+  { k: "giardino", fr: "Jardin", it: "الجنان", out: true, wall: "#4f7f3a", floor: ["gazon", "#5f9a3f", "#4d8434"], ceil: "#9cc8ec", land: "arrosoir", o: [
+    ["السياج · la haie", "haie"], ["الدار تاع الكلب · la niche du chien", "niche"], ["الشجرة · l'arbre", "arbre", "T"], ["القزم تاع الجنان · le nain de jardin", "nain"], ["الشوّاية · le barbecue", "bbq"],
+    ["الحوض تاع النوّار · le parterre de fleurs", "fleurs"], ["الطابلة تاع الجنان · la table de jardin", "tablejardin"], ["البرويطة · la brouette", "brouette"], ["الشمس · le soleil", "soleil"], ["السحابة · le nuage", "nuage"]] },
+  { k: "piscina", fr: "Piscine", it: "البيسين", out: true, wall: "#dfe9ee", floor: ["carreaux", "#e6eef0", "#bcd3da"], ceil: "#a8d8f4", land: "plante", o: [
+    ["الدوش تاع برّا · la douche extérieure", "douche", "T"], ["الفوطة · la serviette", "serviette"], ["اللونجوار · le plongeoir", "plongeoir"], ["البوي · la bouée", "bouee"], ["الشيز لونڨ · le transat", "transat"],
+    ["الماطلا تاع النفخ · le matelas gonflable", "matelas"], ["البيسين الصغير · le bassin", "bassin"], ["السلّوم تاع البيسين · l'échelle de piscine", "echelle"], ["الپاراسول · le parasol", "parasol"], ["النورس · la mouette", "oiseau"]] },
+  { k: "soffitta", fr: "Grenier", it: "السدّة", wall: "#9b7a55", floor: ["planches", "#7b5a3a", "#6a4c30"], ceil: "#5a4030", land: "velo", o: [
+    ["الصندوق الكبير · la malle", "malle"], ["الكارطونات · les cartons", "cartons"], ["الطويقة · la lucarne", "fenetre", "T"], ["الكرسي الهزّاز · le rocking-chair", "fauteuil"], ["المانكان · le mannequin", "mannequin", "T"],
+    ["الفونوڨراف · le gramophone", "gramo"], ["الزربية المطويّة · le tapis roulé", "rouleau"], ["الدمية · la poupée", "poupee"], ["الخشبة تاع السقف · la poutre", "poutre"], ["النسج تاع العنكبوت · la toile d'araignée", "toile"]] },
+  { k: "cameretta", fr: "Chambre d'enfant", it: "بيت الذراري", wall: "#8fd0a8", floor: ["damier", "#f2c84b", "#5aa0d8"], ceil: "#cfe6ff", land: "trottinette", o: [
+    ["الصندوق تاع اللعب · le coffre à jouets", "coffre"], ["الدبّ تاع الپلوش · l'ours en peluche", "ours"], ["الدار تاع الدمى · la maison de poupée", "maisonpoupee"], ["العود اللي يتهزهز · le cheval à bascule", "cheval"], ["الفراش فوق بعضاهم · les lits superposés", "litsup", "T"],
+    ["الكورة · le ballon", "ballon"], ["الزربية پوزل · le tapis puzzle", "tapispuzzle"], ["التران الصغير · le petit train", "train"], ["المعلّقة تاع البيبي · le mobile", "mobile"], ["النجوم · les étoiles", "etoiles"]] },
+  { k: "bagno", fr: "Salle de bain", it: "الحمّام", wall: "#8fcbe0", floor: ["damier", "#ffffff", "#2f6f9a"], ceil: "#f7fbfc", land: "plante", o: [
+    ["البانيو · la baignoire", "baignoire"], ["المعلّق تاع الفوطات · le porte-serviettes", "radiateur"], ["اللافابو · le lavabo", "lavabo"], ["الشيتة تاع السنان · la brosse à dents", "verre"], ["الدوش · la douche", "douche", "T"],
+    ["الميزان · la balance", "balance"], ["الزربية تاع الحمّام · le tapis de bain", "tapisbain"], ["القفّة تاع الحوايج الموسّخين · le panier à linge", "panier"], ["النيون تاع الحمّام · le néon", "neon"], ["الريدو تاع الدوش · le rideau de douche", "rideaudouche"]] },
+  { k: "camera", fr: "Chambre des parents", it: "بيت الرقاد", wall: "#b9a3c9", floor: ["moquette", "#cdb9a6", "#bca792"], ceil: "#f5f0f7", land: "valise", o: [
+    ["الخزانة · l'armoire", "armoire", "T"], ["الطابلة تاع جنب الفراش · la table de chevet", "chevet"], ["راس الفراش · la tête de lit", "tetelit"], ["الطابلة تاع الزواق · la coiffeuse", "coiffeuse"], ["الكوموضة · la commode", "commode"],
+    ["الشلاكات · les chaussons", "chaussons"], ["الفراش الكبير · le lit double", "lit"], ["الزربية تاع جنب الفراش · la descente de lit", "tapis"], ["الثريّا تاع البيت · le lustre", "lustre"], ["الناموسية · la moustiquaire", "moustiquaire"]] },
+  { k: "studio", fr: "Bureau", it: "البيرو", wall: "#3f6273", floor: ["parquet", "#4a3524", "#5a412c"], ceil: "#e8e4dc", land: "lampadaire", o: [
+    ["البيرو · le bureau", "bureau"], ["الإمپريمانت · l'imprimante", "imprimante"], ["الرفّ · l'étagère", "biblio", "T"], ["الكرة الأرضية · le globe", "globe"], ["القجر تاع البيرو · le caisson", "caisson"],
+    ["الكرسي تاع البيرو · le fauteuil de bureau", "fauteuilbureau"], ["الزربية تاع البيرو · le tapis", "tapis"], ["السلّة تاع الكواغط · la corbeille", "poubelle"], ["السپوتات · les spots", "spots"], ["الكليماتيزور · le climatiseur", "clim"]] },
+  { k: "gabinetto", fr: "Toilettes", it: "الطواليت", wall: "#2e6b4f", floor: ["damier", "#1e1e1e", "#d0d0d0"], ceil: "#f0f0ea", land: "plante", o: [
+    ["الكابينة · la cuvette", "wc"], ["الكاغط تاع الطواليت · le papier toilette", "papier"], ["الشاس · la chasse d'eau", "chasse"], ["الشطّابة تاع الطواليت · la balayette", "balayette"], ["اللافابو الصغير · le lave-mains", "lavabo"],
+    ["المجلّات · les magazines", "magazines"], ["الريحة تاع الطواليت · le désodorisant", "spray"], ["الزربية تاع الطواليت · le tapis", "tapisbain"], ["البولة · l'ampoule", "ampoule"], ["الطويقة الصغيرة · la lucarne", "lucarne"]] }
 ];
 // une teinte et un style par appartement (étage), pour que deux salons ne se confondent pas
 const HSTYLES = [["classique", "#ffffff", 0], ["provençal", "#f2b56b", .22], ["scandinave", "#ffffff", .35], ["bord de mer", "#6fb3d9", .22], ["montagne", "#8a5a33", .22], ["années 70", "#e0892b", .28], ["art déco", "#1f3b4d", .2]];
@@ -1585,8 +1585,8 @@ function sentOk(expected, answer) {   // part des mots attendus retrouvés dans 
 }
 let WIDX = null, WMW = null;   // forme darija exacte → items qui la portent (une forme conjuguée ou accordée compte pour son propre item, pas pour l'infinitif ni le mot de base) ; WMW : lieux en plusieurs mots (Stati Uniti)
 // forme exacte, accents gardés (« là » ≠ « la », « è » ≠ « e ») ; article initial retiré des items (« la fame » → fame)
-const wtok = s => String(s || "").normalize("NFC").toLowerCase().replace(/\(.*?\)/g, " ").replace(/[’`]/g, "'").replace(/'/g, "' ").replace(/[^a-zà-öø-ÿ' ]/g, " ").split(/\s+/).map(w => w.replace(/^'+/, "")).filter(Boolean);
-const wkey = s => { const t = wtok(s); if (t.length > 1 && /^(il|lo|la|i|gli|le|l'|un|una|uno|un')$/.test(t[0])) t.shift(); return t.join(" "); };
+const wtok = s => String(s || "").normalize("NFC").toLowerCase().replace(/\(.*?\)/g, " ").replace(/[’`]/g, "'").replace(/'/g, "' ").replace(/[^a-zà-öø-ÿ0-9' ]/g, " ").split(/\s+/).map(w => w.replace(/^'+/, "")).filter(Boolean);
+const wkey = s => { const t = wtok(s); if (t.length > 1 && /^(el|l|l'|ech|ed|er|es|et|ez|en|ej|ch|d|r|s|t|z|n|j|dh)$/.test(t[0])) t.shift(); return t.join(" "); };
 // trou d'un item à trou unique : « a C_lieu » → lieu, « a C_qn » → qn, « da C » → c
 const holeOf = a => { const m = String(a).match(/\bC\d?_([a-zàéè]+)/); return m ? m[1] : /\b(?:S|V|C)\d?(?![’'\w])/.test(a) ? "c" : ""; };
 // la phrase, mot à mot, avec la majuscule (un prénom après « a » appelle « a C_qn ») ; les chiffres restent (« a 30 anni »)
@@ -1607,14 +1607,14 @@ function wordIndex() {
     if (cls === "expressions" || cls === "incises") return;
     if (x.k === "tpl" && String(rawIt(x)).split(" / ").some(t => (t.match(/\b(?:S|V|C)\d?(?:_[a-zàéè]+)?(?![’'\w])/g) || []).length > 1)) return;   // tournure à plusieurs trous : pas un mot
     const geo = x.th === "geo", form = cls === "formes" || /\bparticipe\b/.test(x.fr), noun = cls === "noms" && !geo;
-    for (const raw of String(rawIt(x)).replace(/\(.*?\)/g, " ").split(/ \/ |\/|;/)) { const hole = holeOf(raw);
+    for (const raw of String(x.lt || rawIt(x)).replace(/\(.*?\)/g, " ").split(/ \/ |\/|;/)) { const hole = holeOf(raw);
       for (const a of altsOf(raw)) { const w = wkey(a); if (!w) continue;
         if (w.includes(" ")) { if (geo) { const t = w.split(" "); if (!WMW.has(t[0])) WMW.set(t[0], []); WMW.get(t[0]).push({ t, ri, n }); } continue; }
         if (!WIDX.has(w)) WIDX.set(w, []); WIDX.get(w).push({ ri, n, hole, form, noun, geo }); } } }));
   return WIDX;
 }
 function sentenceItems(x) {   // items vraiment portés par la phrase en darija : le contexte départage les trous (a C_lieu / a C_qn) et les homographes (fatto participe / il fatto)
-  const idx = wordIndex(), T = ctoks(x.eit), out = [], seen = new Set();
+  const idx = wordIndex(), T = ctoks(x.elt || x.eit).flatMap(t => t.w.includes("-") ? t.w.split("-").filter(Boolean).map(w => ({ w, cap: t.cap })) : [t]), out = [], seen = new Set();
   const lead = T.length > 1 && /o$/.test(T[0].w) && PREPW.has(T[1].w) && !/^\s*[^\s,;:!?.…]+\s*[,;:!?.…]/.test(x.eit);   // « Lavoro a Ginevra » : 1re personne, pas « il lavoro »
   const push = e => { const k = e.ri + ":" + e.n; if (!seen.has(k)) { seen.add(k); out.push({ ri: e.ri, n: e.n }); } };
   const placeAt = i => { if (!T[i]) return null;
@@ -1824,7 +1824,7 @@ async function renderCurve() {
   g += `<line class="xh" id="xh" y1="${T}" y2="${y0}" x1="-10" x2="-10"/>`;
   svg.innerHTML = g;
   const nextWords = C1.find(p => p[0] > me.n && p[1] > me.c + 5), p95 = extPts.find(z => z[1] >= 95);
-  $("#curveTxt").textContent = tour ? `Tournures : tu maîtrises ${me.c.toFixed(1)} % des tournures du palais, pondérées par leur fréquence. Chaque expression, locution ou incise vaut sa fréquence comme bloc dans le darija parlé, mesurée sur 200 millions de mots de sous-titres de films et séries (OpenSubtitles) ; seules les expressions à trou dont la partie fixe est un seul mot (« E …? ») sont estimées. Les ${CURVES.tours.toLocaleString("fr-FR")} tournures du palais font 100 % ; les mots seuls n'y comptent pas, ils sont dans la courbe « Mots ».` + (nextWords ? ` En suivant ${ord === "fr" ? "la fréquence française" : ord === "it" ? "la fréquence darija" : "l'ordre du palais"}, +5 % arrivent vers ${nextWords[0]} niches.` : "") : `Tu reconnais ${me0.nc} mot(s) ou expression(s) dans le sens italien → français (au moins une réussite en DZ → FR ou à l'écoute) : ils couvrent environ ${me.c.toFixed(1)} % des mots entendus dans une conversation en darija. Les ${N0.toLocaleString("fr-FR")} niches du palais en couvrent ${P0.toFixed(0)} % ; les expressions et locutions n'ajoutent pas de pourcentage, car leurs mots sont déjà comptés, mais elles aident à comprendre les tournures.` + (nextWords ? ` En suivant ${ord === "fr" ? "la fréquence française" : ord === "it" ? "la fréquence darija" : "l'ordre du palais"}, +5 % arrivent vers ${nextWords[0]} niches.` : "") +
+  $("#curveTxt").textContent = tour ? `Tournures : tu maîtrises ${me.c.toFixed(1)} % des tournures du palais, pondérées par leur fréquence. Chaque expression, locution ou incise vaut sa fréquence comme bloc dans le darija parlé, mesurée sur 200 millions de mots de sous-titres de films et séries (OpenSubtitles) ; seules les expressions à trou dont la partie fixe est un seul mot (« E …? ») sont estimées. Les ${CURVES.tours.toLocaleString("fr-FR")} tournures du palais font 100 % ; les mots seuls n'y comptent pas, ils sont dans la courbe « Mots ».` + (nextWords ? ` En suivant ${ord === "fr" ? "la fréquence française" : ord === "it" ? "la fréquence darija" : "l'ordre du palais"}, +5 % arrivent vers ${nextWords[0]} niches.` : "") : `Tu reconnais ${me0.nc} mot(s) ou expression(s) dans le sens darija → français (au moins une réussite en DZ → FR ou à l'écoute) : ils couvrent environ ${me.c.toFixed(1)} % des mots entendus dans une conversation en darija. Les ${N0.toLocaleString("fr-FR")} niches du palais en couvrent ${P0.toFixed(0)} % ; les expressions et locutions n'ajoutent pas de pourcentage, car leurs mots sont déjà comptés, mais elles aident à comprendre les tournures.` + (nextWords ? ` En suivant ${ord === "fr" ? "la fréquence française" : ord === "it" ? "la fréquence darija" : "l'ordre du palais"}, +5 % arrivent vers ${nextWords[0]} niches.` : "") +
     (full ? ` Au-delà du palais, la courbe pointillée prolonge avec les mots suivants du darija parlé (sous-titres de films), par fréquence : ${p95 ? `95 % vers ${Math.round(p95[0] / 1000)} 000 mots ; ` : ""}les derniers pour cent sont surtout des noms propres et des mots très rares.` : "");
   const valAt = (pts, n) => { if (n <= 0) return 0; let lo = 0, hi = pts.length - 1; if (n >= pts[hi][0]) return pts[hi][1]; while (hi - lo > 1) { const m = (lo + hi) >> 1; if (pts[m][0] <= n) lo = m; else hi = m; } return pts[lo][1]; };
   const tip = $("#ctip");
@@ -2277,12 +2277,12 @@ async function renderLib() {
   const ord = prefs.libOrder || "freq", freq = ord === "freq" || ord === "freqit", lg = ord === "freqit" ? "it" : "fr", fineF = fineBy(lg);
   document.querySelectorAll("[data-liborder]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.liborder === ord)));
   $("#libCount").textContent = `${LIB.length} mots et expressions · ${S.size} appris`;
-  $("#libInfo").textContent = (rows.length === LIB.length ? `${rows.length} entrées` : `${rows.length} entrée(s) sur ${LIB.length}`) + (freq ? ` · du plus fréquent au plus rare (${lg === "it" ? "italien" : "français"} parlé)` : ord === "theme" ? " · par thème, du plus fréquent au plus rare dans chaque thème" : " · par classe grammaticale, dans l'ordre du palais par classe") + " · touche une ligne pour la fiche complète";
+  $("#libInfo").textContent = (rows.length === LIB.length ? `${rows.length} entrées` : `${rows.length} entrée(s) sur ${LIB.length}`) + (freq ? ` · du plus fréquent au plus rare (${lg === "it" ? "darija" : "français"} parlé)` : ord === "theme" ? " · par thème, du plus fréquent au plus rare dans chaque thème" : " · par classe grammaticale, dans l'ordre du palais par classe") + " · touche une ligne pour la fiche complète";
   const row = ({ ri, n, x }, rank) => { const o = S.get(ri + ":" + n); return `<details class="lrow" data-ri="${ri}" data-n="${n}" style="--fc:${COLS[Math.floor(n / 10)]}"><summary>` +
     `<span class="ln${rank ? " rk" : ""}">${rank ? rank : String(n).padStart(2, "0")}</span><span class="dotb${o ? " b" + o.b : ""}${o && o.due ? " due" : ""}" title="${o ? "boîte " + o.b + (o.due ? " · à réviser" : "") : "jamais vu"}"></span>` +
     (() => { const tags = `${x.k ? `<small class="kind ${x.k}">${x.k === "tpl" ? "à trous" : x.k === "loc" ? "locution" : x.k === "col" ? "collocation" : "figée"}</small>` : ""}${rank ? `<small class="lroomtag">${esc(shortName(R[ri]))} ${String(n).padStart(2, "0")}</small>` : ""}`;
       // en fréquence DZ, le darija passe en tête (au-dessus sur mobile) et le français en dessous
-      return lg === "it" && freq ? `<span class="lit l1" lang="ar" dir="rtl">${escP(dI(x))}${tags}</span><span class="lfr l2">${escP(dF(x))}</span>` : `<span class="lfr l1">${escP(dF(x))}${tags}</span><span class="lit l2" lang="ar" dir="rtl">${escP(dI(x))}</span>`; })() + `${lg === "it" ? `<span class="lz" title="Gain de compréhension du darija parlé une fois appris">${gainUnit(R[ri], x) ? fmtGain(gainOf(R[ri], x, "it")) : ""}</span><span class="lo" title="Occurrences par 100 millions de mots, parlé italien (score fin)">${x.oi ? (x.ax ? "≈ " : "") + x.oi.toLocaleString("fr-FR") : ""}</span>` : `<span class="lz" title="Gain d'expression en français parlé une fois appris">${gainUnit(R[ri], x) ? fmtGain(gainOf(R[ri], x, "fr")) : ""}</span><span class="lo" title="Occurrences par 100 millions de mots, parlé français (score fin)">${x.of ? (x.ax ? "≈ " : "") + x.of.toLocaleString("fr-FR") : ""}</span>`}` +
+      return lg === "it" && freq ? `<span class="lit l1" lang="ar" dir="rtl">${escP(dI(x))}${tags}</span><span class="lfr l2">${escP(dF(x))}</span>` : `<span class="lfr l1">${escP(dF(x))}${tags}</span><span class="lit l2" lang="ar" dir="rtl">${escP(dI(x))}</span>`; })() + `${lg === "it" ? `<span class="lz" title="Gain de compréhension du darija parlé une fois appris">${gainUnit(R[ri], x) ? fmtGain(gainOf(R[ri], x, "it")) : ""}</span><span class="lo" title="Occurrences par 100 millions de mots, parlé darija (score fin)">${x.oi ? (x.ax ? "≈ " : "") + x.oi.toLocaleString("fr-FR") : ""}</span>` : `<span class="lz" title="Gain d'expression en français parlé une fois appris">${gainUnit(R[ri], x) ? fmtGain(gainOf(R[ri], x, "fr")) : ""}</span><span class="lo" title="Occurrences par 100 millions de mots, parlé français (score fin)">${x.of ? (x.ax ? "≈ " : "") + x.of.toLocaleString("fr-FR") : ""}</span>`}` +
     `<button class="say" type="button" data-say="${esc(x.it)}" data-src="${esc(asrc(x.ai, x.am))}" aria-label="Écouter ${esc(x.it)}">🔊</button></summary><div class="lbody"></div></details>`; };
   if (!rows.length) { $("#libList").innerHTML = `<p class="pr">Aucun mot ne correspond à ces filtres.</p>`; return; }
   if (freq) {   // ordre purement fréquentiel : toutes classes mêlées, par tranches de 250 rangs
