@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#123a2c"/>
+  <!-- sol -->
+  <rect x="0" y="430" width="512" height="82" fill="#0c2a20"/>
+  <!-- drapeau algérien sur mât -->
+  <line x1="256" y1="52" x2="256" y2="150" stroke="#c9a24a" stroke-width="8" stroke-linecap="round"/>
+  <g transform="translate(260 56)">
+    <rect x="0" y="0" width="51" height="60" fill="#006233"/>
+    <rect x="51" y="0" width="51" height="60" fill="#ffffff"/>
+    <circle cx="51" cy="30" r="17" fill="#d21034"/>
+    <circle cx="56" cy="30" r="14" fill="#ffffff"/>
+    <path d="M63 22 L65.4 28 L71.8 28.3 L66.8 32.3 L68.5 38.5 L63 35 L57.5 38.5 L59.2 32.3 L54.2 28.3 L60.6 28 Z" fill="#d21034"/>
+  </g>
+  <!-- cerveau en coupole -->
+  <g>
+    <path d="M122 246 C110 196 150 150 200 156 C214 132 250 126 256 150 C262 126 298 132 312 156 C362 150 402 196 390 246 Z" fill="#e58fb2"/>
+    <line x1="256" y1="150" x2="256" y2="246" stroke="#a9557c" stroke-width="7"/>
+    <path d="M168 220 C178 196 204 200 206 182 M150 238 C160 226 180 232 186 216 M222 238 C226 218 240 214 236 196" fill="none" stroke="#a9557c" stroke-width="7" stroke-linecap="round"/>
+    <path d="M344 220 C334 196 308 200 306 182 M362 238 C352 226 332 232 326 216 M290 238 C286 218 272 214 276 196" fill="none" stroke="#a9557c" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- façade blanche de la Casbah -->
+  <rect x="96" y="244" width="320" height="168" fill="#f7f4ec"/>
+  <!-- frise de zellige -->
+  <rect x="96" y="244" width="320" height="22" fill="#1f7a5a"/>
+  <g fill="#f2c94c">
+    <path d="M110 255 l7 -7 l7 7 l-7 7 z"/><path d="M146 255 l7 -7 l7 7 l-7 7 z"/><path d="M182 255 l7 -7 l7 7 l-7 7 z"/>
+    <path d="M218 255 l7 -7 l7 7 l-7 7 z"/><path d="M254 255 l7 -7 l7 7 l-7 7 z"/><path d="M290 255 l7 -7 l7 7 l-7 7 z"/>
+    <path d="M326 255 l7 -7 l7 7 l-7 7 z"/><path d="M362 255 l7 -7 l7 7 l-7 7 z"/><path d="M398 255 l7 -7 l7 7 l-7 7 z"/>
+  </g>
+  <rect x="96" y="266" width="320" height="6" fill="#c9a24a"/>
+  <!-- fenêtres en arc outrepassé -->
+  <g fill="#1f6fa8">
+    <path d="M128 352 V316 A20 22 0 1 1 164 316 V352 Z"/>
+    <path d="M348 352 V316 A20 22 0 1 1 384 316 V352 Z"/>
+  </g>
+  <g fill="none" stroke="#c9a24a" stroke-width="4">
+    <path d="M128 352 V316 A20 22 0 1 1 164 316 V352"/>
+    <path d="M348 352 V316 A20 22 0 1 1 384 316 V352"/>
+  </g>
+  <!-- porte en arc outrepassé, bleue avec clous -->
+  <path d="M220 408 V336 A38 40 0 1 1 292 336 V408 Z" fill="#1f6fa8"/>
+  <path d="M220 408 V336 A38 40 0 1 1 292 336 V408" fill="none" stroke="#c9a24a" stroke-width="5"/>
+  <g fill="#f2c94c">
+    <circle cx="240" cy="350" r="3"/><circle cx="272" cy="350" r="3"/><circle cx="240" cy="378" r="3"/><circle cx="272" cy="378" r="3"/>
+    <circle cx="256" cy="320" r="3"/><circle cx="264" cy="372" r="4"/>
+  </g>
+  <!-- marches -->
+  <rect x="86" y="408" width="340" height="12" fill="#e6dfd0"/>
+  <rect x="72" y="420" width="368" height="12" fill="#d3cab7"/>
+</svg>
