@@ -52,6 +52,10 @@ SPECIAL = {"courantes": "التّعابير الشايعة · t-ta3abir ech-chay
            "villes_pays": "المدن والبلدان · l-moudoun w l-bouldan"}
 FR_FIX = {(0, 48): "la voiture (soutenu)"}
 FRFIX = json.load(open("fr_fix.json", encoding="utf8")) if os.path.exists("fr_fix.json") else {}
+import glob as _glob
+for _f in sorted(_glob.glob("fixes/*.json")):   # transpositions Italie → Algérie
+    for _k, _v in json.load(open(_f, encoding="utf8")).items():
+        FRFIX.setdefault(_k, {}).update(_v)
 CM103 = [l.strip() for l in open("cm_darija.txt", encoding="utf8") if l.strip()]
 def check(ri, write=False):
     room_it = it["rooms"][ri]
@@ -86,7 +90,8 @@ def check(ri, write=False):
             n["af"] = None   # le son FR du libellé ne correspond plus
         fx = FRFIX.get(f"{ri}:{i}")
         if fx:
-            n.update(efr=fx["efr"], efm=fx["efm"], ae=None)
+            if "efr" in fx:
+                n.update(efr=fx["efr"], efm=fx["efm"], ae=None)
         if ri == 103 and n.get("cm"):
             n["cm"] = CM103[i]
         if x.get("px"):
@@ -95,6 +100,10 @@ def check(ri, write=False):
             n["px"] = [[e[0], t[0], e[2], None, t[1]] for e, t in zip(x["px"], tr)]
         elif i in px:
             errs.append(f"{i}: exemples supplémentaires en trop")
+        for j, t in ((fx or {}).get("px") or {}).items():
+            j = int(j)
+            if n.get("px") and j < len(n["px"]):
+                n["px"][j][0] = t; n["px"][j][2] = None
         niches.append(n)
     room["niches"] = niches
     return room, errs
