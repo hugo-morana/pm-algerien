@@ -1534,6 +1534,10 @@ async function acExport() {
   if (!IN_CLAUDE) {
     try { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([txt], { type: "application/json" })); a.download = name; document.body.appendChild(a); a.click(); a.remove(); acSay("Fichier « " + name + " » téléchargé."); return; } catch (e) {}
   }
+  if (IN_CLAUDE) {   // dans Claude : le visualiseur propose l'enregistrement du fichier (capacité downloads)
+    const dl = await window.claude.use("downloads").catch(() => null);
+    if (dl) { try { await dl.save({ filename: name, data: txt }); acSay("Fichier « " + name + " » enregistré."); return; } catch (e) { if (e && e.code === "declined") { acSay("Téléchargement annulé."); return; } } }
+  }
   try { await navigator.clipboard.writeText(txt); acSay("Progression copiée dans le presse-papiers (format JSON)."); } catch { acSay("Copie impossible sur cet appareil."); }
 }
 async function acDelGo() {
