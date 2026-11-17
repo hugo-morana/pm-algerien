@@ -4,7 +4,7 @@
    - les sons (paquets mp3 par salle, versionnés par ?v=) restent dans un cache à part, gardé d'une version à l'autre ;
    - les polices et scripts externes sont servis depuis le cache puis rafraîchis en arrière-plan ;
    - la synchronisation de progression (Supabase) ne passe jamais par le cache. */
-const VERSION = "dz-icone-1";
+const VERSION = "dz-compte-1";
 const CORE = "pmdz-core-" + VERSION, EXT = "pmdz-ext", AUDIO = "pmdz-audio";
 const FILES = ["./", "index.html", "data3d.json", "config.js", "offline.js", "manifest.json", "vendor/three.min.js",
   "validation.html", "apple-touch-icon.png", "icon-512.png", "favicon-32.png", "logo.svg"];
