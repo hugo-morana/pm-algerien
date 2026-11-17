@@ -8,7 +8,8 @@ Palais mental 3D pour apprendre le **darija algérien** (parler d'Alger) : 104 s
 - `data3d.json` : toutes les salles. Chaque niche contient le mot français, la traduction darija en écriture arabe avec sa translittération latine (arabizi : 3 = ع, 7 = ح, 9 = ق, 2 = ء), la prononciation à la française, l'API, un mot-clé sonore français, une scène mnémotechnique, la phrase d'exemple française et sa traduction darija, et des exemples supplémentaires.
 - `validation.html` : la table de relecture, salle par salle, avec un filtre « à vérifier » pour les niches signalées comme douteuses.
 - `audio/` : les sons français (voix Hugo Pro). Le darija est lu par la voix arabe de l'appareil.
-- `config.js` : clés Supabase pour la connexion par e-mail (vide par défaut : la progression reste sur l'appareil). La progression darija est rangée sous ses propres clés (`pmdz:` en local, `dz_` dans Supabase), séparée de celle de l'italien.
+- `config.js` : clés Supabase pour la connexion par e-mail (vide par défaut : la progression reste sur l'appareil). Elles peuvent aussi être saisies dans l'appli : **Réglages › Compte › Serveur de synchronisation**.
+- **Réglages › Compte** : créer un compte, se connecter (code à 6 chiffres par e-mail), synchroniser, changer d'adresse, exporter sa progression, se déconnecter, supprimer son compte. La suppression utilise la fonction `delete_my_account` de `supabase/schema.sql` (à exécuter une fois dans l'éditeur SQL de Supabase). La progression darija est rangée sous ses propres clés (`pmdz:` en local, `dz_` dans Supabase), séparée de celle de l'italien.
 
 ## Sources de la traduction
 
